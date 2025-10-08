@@ -1,0 +1,26 @@
+﻿@model LTwebBuoi06.Models.SanPham
+@{
+    ViewBag.Title = "ChiTietSachSanPham";
+}
+
+<main>
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-image">
+                <img id="detail-image" src="@Model.Hinh" alt="Sản phẩm">
+            </div>
+            <div class="product-info">
+                <h1 id="detail-title" class="product-title">@Model.TenSP</h1>
+                <p id="detail-price" class="product-price">@Model.Gia</p>
+                <p id="detail-description" class="product-description">
+                    @Model.GhiChu
+                </p>
+
+                <div class="product-actions">
+                    <button class="btn-buy">Mua Ngay</button>
+                    <button class="card-button" onclick="showPage('home')">Quay Lại</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
